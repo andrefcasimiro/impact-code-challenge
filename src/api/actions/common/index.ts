@@ -1,3 +1,4 @@
+import * as R from 'ramda'
 import {
   fetchHelper,
   postHelper,
@@ -8,8 +9,12 @@ export const get = async (key: string, id: number): Promise<any> => await fetchH
 
 export const list = async (key: string, filters: any): Promise<any> => {
   const table = await fetchHelper(key)
-  let result: any = []
 
+  if (!filters || R.isEmpty(filters)) {
+    return table
+  }
+
+  let result: any = []
   table.forEach((entry: any) => {
     Object.keys(filters).forEach((field: any) => {
       if (filters[field].includes(entry[field]) && !result.includes(entry)) {

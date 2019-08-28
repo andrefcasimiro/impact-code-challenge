@@ -17,7 +17,7 @@ const Navbar = ({ links = appConfig.appLinks }: Props) => (
   <React.Fragment>
     <Wrap>
       <Content>
-        {links.map((link, index) => <Link href={link.path}>{link.title}</Link>)}
+        {links.map((link, index) => <Link key={index} href={link.path}>{link.title}</Link>)}
       </Content>
       <Content>
         <Link href='#'>Login</Link>

@@ -2,7 +2,7 @@ import * as R from 'ramda'
 import config from '../../../App/config'
 
 const fetch = require('node-fetch')
-const baseURI = config.corsOptions.origin
+const baseURI = config.jsonServerPort
 
 export const fetchHelper = (key: string, id?: number): any => {
   const endpoint = id ? `${baseURI}/${key}/${id}` : `${baseURI}/${key}`

@@ -25,7 +25,7 @@ export const Link = styled.a`
   &:hover {
     text-decoration: underline;
   }
-  
+
   ${mq('max').tablet} {
     font-size: 1.4rem;
   }
