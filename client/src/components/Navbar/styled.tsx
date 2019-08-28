@@ -3,7 +3,6 @@ import theme from '../../global/theme'
 import { mq } from '../../common/mediaQuery'
 
 export const Wrap = styled.div`
-  background: ${theme.color.secondary};
   width: 100%;
   height: 3rem;
   display: flex;

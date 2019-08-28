@@ -1,10 +1,13 @@
 import * as React from 'react'
 // @ts-ignore
-import { compose, withHandlers, HOC } from 'recompose'
+import { compose, withHandlers } from 'recompose'
+import { isEmpty } from 'ramda'
+import { connect } from 'react-redux'
 import withQuery from '../../hocs/withQuery'
 import { listBeers } from '../../data/beer/queries'
 import { Beer } from '../../data/beer/types'
 import { formatStyle, formatType } from '../../data/beer/helpers'
+import { selectSearchParameters } from '../../data/search/selectors'
 import {
   Content,
   TilesWrap,
@@ -18,9 +21,7 @@ import {
 } from './styled'
 
 const List = ({ data, handleProducerSearch }) => {
-  if (!data) {
-    return null
-  }
+  if (!data) { return null }
 
   return (
     <Content>
@@ -47,11 +48,20 @@ const List = ({ data, handleProducerSearch }) => {
   )
 }
 
-const enhancer: HOC<any, {}> = compose(
+const mapStateToProps = state => ({
+  searchParameters: selectSearchParameters(state),
+})
+
+const enhancer: any = compose(
+  connect(mapStateToProps, {}),
   withQuery(listBeers, {
-    variables: () => ({
-      filter: {},
-    })
+    variables: props => {
+      const isEmpty = Object.values(props.searchParameters).filter(value => value).length <= 0
+
+      return {
+        filter: isEmpty ? {} : props.searchParameters,
+      }
+    }
   }),
   withHandlers({
     handleProducerSearch: props => value => {

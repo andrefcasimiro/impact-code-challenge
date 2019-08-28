@@ -4,11 +4,11 @@ import {
 } from '../../data/search/reducer'
 import thunkMiddleware from 'redux-thunk'
 import { persistStore, persistReducer } from 'redux-persist'
-import storage from 'redux-persist/lib/storage'
+import sessionStorage from 'redux-persist/lib/storage/session'
 
 const persistConfig = {
   key: 'root',
-  storage,
+  storage: sessionStorage,
 }
 
 const reducers = combineReducers({

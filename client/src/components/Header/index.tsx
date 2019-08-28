@@ -5,6 +5,7 @@ import {
   Logo,
 } from './styled'
 import appConfig from '../../global/app/config'
+import Navbar from '../Navbar'
 
 type Props = {
   appName?: string,
@@ -12,7 +13,12 @@ type Props = {
 
 const Header = ({ appName = appConfig.appName }: Props) => (
   <Wrap>
-    <Content><Logo onClick={() => window.location.assign('/')}>{appName}</Logo></Content>
+    <Content>
+      <Logo onClick={() => window.location.assign('/')}>
+        {appName}
+      </Logo>
+    </Content>
+    <Navbar />
   </Wrap>
 )
 

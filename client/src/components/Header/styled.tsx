@@ -13,9 +13,8 @@ export const Wrap = styled.div`
 
   color: ${theme.color.white};
   width: 100%;
-  height: 16rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 
   ${mq("max").tablet} {
@@ -25,7 +24,9 @@ export const Wrap = styled.div`
 
 export const Content = styled.div`
   display: flex;
+  width: 100%;
   align-items: center;
+  justify-content: center;
 `
 
 export const Logo = styled.h1`

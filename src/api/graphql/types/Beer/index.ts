@@ -55,6 +55,7 @@ export default `
     style: [BeerStyle]
     region: [String]
     country: [String]
+    producer: [String]
     year: [Int]
   }
 
