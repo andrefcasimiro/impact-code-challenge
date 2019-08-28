@@ -3,5 +3,6 @@ A Wine / Beer cellar web app built in React JS as a code challenge for Impact. I
 
 # back-end instructions
 1. Install any dependencies with `npm install`
-2. `npm start` to lift up the server and the api
+2. Compile the project using `tsc`. The dist/ folder should contain all the transpiled /src .ts files as .js files
+3. `npm start` to lift up the server and the api
 
