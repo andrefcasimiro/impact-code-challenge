@@ -4,6 +4,9 @@ import { ApolloProvider } from 'react-apollo'
 import { BrowserRouter as Router } from 'react-router-dom'
 import App from './containers'
 import client from './global/graphql/config'
+import { Provider } from 'react-redux'
+import { store, persistor } from './global/store'
+import { PersistGate } from 'redux-persist/es/integration/react'
 // @ts-ignore
 import FontFaceObserver from 'fontfaceobserver'
 import appConfig from './global/app/config'
@@ -24,9 +27,13 @@ const element = document.getElementById('root')
 if (element) {
   ReactDOM.render(
     <ApolloProvider client={client}>
-      <Router>
-        <App />
-      </Router>
+      <PersistGate persistor={persistor} loading={null}>
+        <Provider store={store}>
+          <Router>
+            <App />
+          </Router>
+        </Provider>
+      </PersistGate>
     </ApolloProvider>,
     element,
   )
