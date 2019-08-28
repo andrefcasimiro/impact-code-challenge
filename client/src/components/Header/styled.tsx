@@ -35,4 +35,8 @@ export const Logo = styled.h1`
     font-size: 4.8rem;
     text-shadow: 1rem 0 2rem rgba(0, 0, 0, 0.8);
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 `

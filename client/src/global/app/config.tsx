@@ -6,9 +6,5 @@ export default {
       title: 'Home',
       path: '/',
     },
-    {
-      title: 'Search',
-      path: '/search',
-    },
   ],
 }

@@ -17,17 +17,14 @@
       ],
       "comments": [
         {
-          "id": 1,
           "author": "User 1",
           "content": "I enjoyed this beer a lot!"
         },
         {
-          "id": 2,
           "author": "User 2",
           "content": "Not really a newcomer to this style of beer, so I can definitely say this brew is very enjoyable!"
         },
         {
-          "id": 3,
           "author": "User 3",
           "content": "A bit pricey eh, but you only life once, right?"
         }
@@ -50,17 +47,14 @@
       ],
       "comments": [
         {
-          "id": 4,
           "author": "User 4",
           "content": "The Guinness we all know and love!"
         },
         {
-          "id": 5,
           "author": "User 5",
           "content": "Never understood the love for dark beer. Definitely not for me."
         },
         {
-          "id": 6,
           "author": "User 6",
           "content": "You can tell a good beer with just one sip, but it is better to be sure!"
         }
@@ -83,17 +77,14 @@
       ],
       "comments": [
         {
-          "id": 7,
           "author": "User 7",
           "content": "Esta cerveja é excelente! Deixa para trás um suave aroma a tangerina no paladar."
         },
         {
-          "id": 8,
           "author": "User 8",
           "content": "It is a portuguese india pale ale crafted with care and passion."
         },
         {
-          "id": 9,
           "author": "User 9",
           "content": "Good."
         }
@@ -101,28 +92,78 @@
     },
     {
       "id": 4,
-      "name": "My .   Beer",
-      "description": "this is a very long description ....",
+      "name": "King JJJuliusss",
+      "description": "To continue with our 4th Anniversary celebration, we brewed an extra kettle hop and extra dry hopped version of King Julius! The result is an incredibly intense citrus hop blast unlike anything we've experienced here at Tree House. Mango, orange, and sweet grapefruit are predominant in the aroma with hints of pineapple and blended tropical fruit juice. The taste mirrors the aroma with a juicy mouthfeel and a proper bitterness. Fluffy. This beer challenges the sense and rewards the palate as it warms in the glass. Complex, raw, and beautiful, the amplified King is a beer we are excited to share with you to celebrate four years of Tree House. Thank you! ",
       "type": "ale",
-      "style": "brown",
-      "producer": "diego sanchez",
-      "region": "Azores",
-      "country": "Portugal",
-      "year": 2012,
-      "priceEUR": 3,
-      "alcohol_percentage": 2,
+      "style": "india_pale_ale",
+      "producer": "Tree House Brewing Company",
+      "region": "Monson, Maine",
+      "country": "USA",
+      "year": 2016,
+      "priceEUR": 4.07,
+      "alcohol_percentage": 8.4,
       "images": [
-        "string 1",
-        "sanitize this ."
+        "https://upload.wikimedia.org/wikipedia/commons/a/a4/Toicon-icon-avocado-influence.svg"
+      ],
+      "comments": []
+    },
+    {
+      "id": 5,
+      "name": "Chemin de Croix",
+      "description": "Tastes very English. Old style India Porter.",
+      "type": "stout",
+      "style": "brown",
+      "producer": "Momentum",
+      "region": "Iowa",
+      "country": "USA",
+      "year": 2015,
+      "priceEUR": 3.07,
+      "alcohol_percentage": 6.30,
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/a/a4/Toicon-icon-avocado-influence.svg"
       ],
       "comments": [
         {
-          "author": "Andre",
-          "content": "I was very pleased!"
+          "author": "Charlie Cox",
+          "content": "Medium bitterness. Earthy."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Equinoxe du Printemps",
+      "description": "Équinoxe du Printemps (French for spring equinox) is the quintessential marriage of two great traditions: beer brewing in Scotland, and maple syrup production in Quebec. At the first draught, the mouth is overcome by woody, malty flavours, sustained by a discrete touch of sweetness. The aftertaste brings about the flavours of maple, which are sufficiently present to be appreciated, but never overwhelming the typical flavours of a Scotch Ale. ",
+      "type": "ale",
+      "style": "strong",
+      "producer": "Brasserie Dieu du Ciel",
+      "region": "Quebec",
+      "country": "Canada",
+      "year": 2014,
+      "priceEUR": 6.07,
+      "alcohol_percentage": 9.5,
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/a/a4/Toicon-icon-avocado-influence.svg"
+      ],
+      "comments": [
+        {
+          "author": "JSK12",
+          "content": "Dark malt. Toasty."
         },
         {
-          "author": "Tucho",
-          "content": "Hehehehehee"
+          "author": "Quebec_Mike_99",
+          "content": "Cloudy taste. Fusion of earthly aromas. Medium and oily, with sparkling accents."
+        },
+        {
+          "author": "GDLOSH_U",
+          "content": "Flavor of wood, smoke and caramel. The aroma was malty and leafy, with some dark fruit taste in the aftermatch."
+        },
+        {
+          "author": "jessica_from_quebec",
+          "content": "Le gout est relativement amer, moins sucré et je sens un peu trop l’alcool dans la bouche. "
+        },
+        {
+          "author": "danish_beer_master",
+          "content": "Bitter modtate sød modrate. Livlig oile."
         }
       ]
     }

@@ -11,11 +11,9 @@ type Props = {
 }
 
 const Header = ({ appName = appConfig.appName }: Props) => (
-  <React.Fragment>
-    <Wrap>
-      <Content><Logo>{appName}</Logo></Content>
-    </Wrap>
-  </React.Fragment>
+  <Wrap>
+    <Content><Logo onClick={() => window.location.assign('/')}>{appName}</Logo></Content>
+  </Wrap>
 )
 
 export default Header

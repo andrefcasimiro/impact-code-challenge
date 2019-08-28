@@ -9,7 +9,6 @@ const Routes = () => (
     <Header />
     <Navbar />
     <Route path="/" exact component={Home} />
-    <Route path="/search" exact component={() => null} />
   </React.Fragment>
 )
 

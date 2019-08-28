@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 
 
   body {
-    background: ${theme.color.white};
+    background: ${theme.color.lightGray};
 
     margin: 0;
     font-size: 1.6rem;
