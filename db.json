@@ -1,0 +1,610 @@
+{
+  "beer": [
+    {
+      "id": 1,
+      "name": "Grimbergen Blonde",
+      "description": "Grimbergen is the brand name of a variety of Belgian abbey beers. Originally made by Norbertine monks in the Belgian town of Grimbergen, it is now brewed by two different breweries in Belgium and France.",
+      "type": "ale",
+      "style": "blonde",
+      "producer": "Alken-Maes",
+      "region": "Flemish Brabant",
+      "country": "Belgium",
+      "year": 2019,
+      "priceEUR": 2.48,
+      "alcohol_percentage": 9,
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/a/a4/Toicon-icon-avocado-influence.svg"
+      ],
+      "comments": [
+        {
+          "id": 1,
+          "author": "User 1",
+          "content": "I enjoyed this beer a lot!"
+        },
+        {
+          "id": 2,
+          "author": "User 2",
+          "content": "Not really a newcomer to this style of beer, so I can definitely say this brew is very enjoyable!"
+        },
+        {
+          "id": 3,
+          "author": "User 3",
+          "content": "A bit pricey eh, but you only life once, right?"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Guinness",
+      "description": "A dark Irish dry stout that originated in the brewery of Arthur Guinness at St. James's Gate, Dublin, Ireland, in 1759.",
+      "type": "stout",
+      "style": "dark",
+      "producer": "Diageo",
+      "region": "Dublin",
+      "country": "Ireland",
+      "year": 2018,
+      "priceEUR": 1.68,
+      "alcohol_percentage": 4.2,
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/a/a4/Toicon-icon-avocado-influence.svg"
+      ],
+      "comments": [
+        {
+          "id": 4,
+          "author": "User 4",
+          "content": "The Guinness we all know and love!"
+        },
+        {
+          "id": 5,
+          "author": "User 5",
+          "content": "Never understood the love for dark beer. Definitely not for me."
+        },
+        {
+          "id": 6,
+          "author": "User 6",
+          "content": "You can tell a good beer with just one sip, but it is better to be sure!"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Matiné Session IPA",
+      "description": "This is a beer that has a massive hop punch but in a more sessionable package... meaning you can have more than one and still go about your business. The selection of hops deliver flavors of tangerine, passion fruit and peach in a drinkable package.",
+      "type": "ale",
+      "style": "india_pale_ale",
+      "producer": "Dois Corvos",
+      "region": "Lisboa",
+      "country": "Portugal",
+      "year": 2019,
+      "priceEUR": 2.12,
+      "alcohol_percentage": 4.5,
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/a/a4/Toicon-icon-avocado-influence.svg"
+      ],
+      "comments": [
+        {
+          "id": 7,
+          "author": "User 7",
+          "content": "Esta cerveja é excelente! Deixa para trás um suave aroma a tangerina no paladar."
+        },
+        {
+          "id": 8,
+          "author": "User 8",
+          "content": "It is a portuguese india pale ale crafted with care and passion."
+        },
+        {
+          "id": 9,
+          "author": "User 9",
+          "content": "Good."
+        }
+      ]
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 14
+    },
+    {
+      "id": 15
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 17
+    },
+    {
+      "id": 18
+    },
+    {
+      "id": 19
+    },
+    {
+      "id": 20
+    },
+    {
+      "id": 21
+    },
+    {
+      "id": 22
+    },
+    {
+      "id": 23
+    },
+    {
+      "id": 24
+    },
+    {
+      "id": 25
+    },
+    {
+      "id": 26
+    },
+    {
+      "id": 27
+    },
+    {
+      "id": 28
+    },
+    {
+      "id": 29
+    },
+    {
+      "id": 30
+    },
+    {
+      "id": 31
+    },
+    {
+      "id": 32
+    },
+    {
+      "id": 33
+    },
+    {
+      "id": 34
+    },
+    {
+      "id": 35
+    },
+    {
+      "id": 36
+    },
+    {
+      "id": 37
+    },
+    {
+      "id": 38
+    },
+    {
+      "id": 39
+    },
+    {
+      "id": 40
+    },
+    {
+      "id": 41
+    },
+    {
+      "id": 42
+    },
+    {
+      "id": 43
+    },
+    {
+      "id": 44
+    },
+    {
+      "id": 45
+    },
+    {
+      "id": 46
+    },
+    {
+      "id": 47
+    },
+    {
+      "id": 48
+    },
+    {
+      "id": 49
+    },
+    {
+      "id": 50
+    },
+    {
+      "id": 51
+    },
+    {
+      "id": 52
+    },
+    {
+      "id": 53
+    },
+    {
+      "id": 54
+    },
+    {
+      "id": 55
+    },
+    {
+      "id": 56
+    },
+    {
+      "id": 57
+    },
+    {
+      "id": 58
+    },
+    {
+      "id": 59
+    },
+    {
+      "id": 60
+    },
+    {
+      "id": 61
+    },
+    {
+      "id": 62
+    },
+    {
+      "id": 63
+    },
+    {
+      "id": 64
+    },
+    {
+      "id": 65
+    },
+    {
+      "id": 66
+    },
+    {
+      "id": 67
+    },
+    {
+      "id": 68
+    },
+    {
+      "id": 69,
+      "name": "My .   Beer",
+      "description": "this is a very long description ....",
+      "type": "ale",
+      "style": "brown",
+      "producer": "diego sanchez",
+      "region": "Azores",
+      "country": "Portugal",
+      "year": 2012,
+      "priceEUR": 3,
+      "alcohol_percentage": 2,
+      "images": [
+        "string 1",
+        "sanitize this ."
+      ],
+      "comments": [
+        [
+          {
+            "author": "Andre"
+          },
+          {
+            "content": "I was very pleased!"
+          }
+        ],
+        [
+          {
+            "author": "Tucho"
+          },
+          {
+            "content": "Hehehehehee"
+          }
+        ]
+      ]
+    },
+    {
+      "id": 70,
+      "name": "My .   Beer",
+      "description": "this is a very long description ....",
+      "type": "ale",
+      "style": "brown",
+      "producer": "diego sanchez",
+      "region": "Azores",
+      "country": "Portugal",
+      "year": 2012,
+      "priceEUR": 3,
+      "alcohol_percentage": 2,
+      "images": [
+        "string 1",
+        "sanitize this ."
+      ],
+      "comments": [
+        [
+          null,
+          null
+        ],
+        [
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": 71,
+      "name": "My .   Beer",
+      "description": "this is a very long description ....",
+      "type": "ale",
+      "style": "brown",
+      "producer": "diego sanchez",
+      "region": "Azores",
+      "country": "Portugal",
+      "year": 2012,
+      "priceEUR": 3,
+      "alcohol_percentage": 2,
+      "images": [
+        "string 1",
+        "sanitize this ."
+      ],
+      "comments": [
+        {
+          "author": "Andre",
+          "content": " I was very pleased! "
+        },
+        {
+          "author": "      Tucho     ",
+          "content": "Hehehehehee"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "name": "My .   Beer",
+      "description": "this is a very long description ....",
+      "type": "ale",
+      "style": "brown",
+      "producer": "diego sanchez",
+      "region": "Azores",
+      "country": "Portugal",
+      "year": 2012,
+      "priceEUR": 3,
+      "alcohol_percentage": 2,
+      "images": [
+        "string 1",
+        "sanitize this ."
+      ],
+      "comments": [
+        {
+          "author": "Andre",
+          "content": " I was very pleased! "
+        },
+        {
+          "author": "      Tucho     ",
+          "content": "Hehehehehee"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "name": "My .   Beer",
+      "description": "this is a very long description ....",
+      "type": "ale",
+      "style": "brown",
+      "producer": "diego sanchez",
+      "region": "Azores",
+      "country": "Portugal",
+      "year": 2012,
+      "priceEUR": 3,
+      "alcohol_percentage": 2,
+      "images": [
+        "string 1",
+        "sanitize this ."
+      ],
+      "comments": [
+        {
+          "author": "Andre",
+          "content": " I was very pleased! "
+        },
+        {
+          "author": "      Tucho     ",
+          "content": "Hehehehehee"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "name": "My .   Beer",
+      "description": "this is a very long description ....",
+      "type": "ale",
+      "style": "brown",
+      "producer": "diego sanchez",
+      "region": "Azores",
+      "country": "Portugal",
+      "year": 2012,
+      "priceEUR": 3,
+      "alcohol_percentage": 2,
+      "images": [
+        "string 1",
+        "sanitize this ."
+      ],
+      "comments": [
+        null,
+        null
+      ]
+    },
+    {
+      "id": 75,
+      "name": "My .   Beer",
+      "description": "this is a very long description ....",
+      "type": "ale",
+      "style": "brown",
+      "producer": "diego sanchez",
+      "region": "Azores",
+      "country": "Portugal",
+      "year": 2012,
+      "priceEUR": 3,
+      "alcohol_percentage": 2,
+      "images": [
+        "string 1",
+        "sanitize this ."
+      ],
+      "comments": [
+        null,
+        null
+      ]
+    },
+    {
+      "id": 76,
+      "name": "My .   Beer",
+      "description": "this is a very long description ....",
+      "type": "ale",
+      "style": "brown",
+      "producer": "diego sanchez",
+      "region": "Azores",
+      "country": "Portugal",
+      "year": 2012,
+      "priceEUR": 3,
+      "alcohol_percentage": 2,
+      "images": [
+        "string 1",
+        "sanitize this ."
+      ],
+      "comments": [
+        null,
+        null
+      ]
+    },
+    {
+      "id": 77,
+      "name": "My .   Beer",
+      "description": "this is a very long description ....",
+      "type": "ale",
+      "style": "brown",
+      "producer": "diego sanchez",
+      "region": "Azores",
+      "country": "Portugal",
+      "year": 2012,
+      "priceEUR": 3,
+      "alcohol_percentage": 2,
+      "images": [
+        "string 1",
+        "sanitize this ."
+      ],
+      "comments": [
+        {
+          "content": "I was very pleased!"
+        },
+        {
+          "content": "Hehehehehee"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "name": "My .   Beer",
+      "description": "this is a very long description ....",
+      "type": "ale",
+      "style": "brown",
+      "producer": "diego sanchez",
+      "region": "Azores",
+      "country": "Portugal",
+      "year": 2012,
+      "priceEUR": 3,
+      "alcohol_percentage": 2,
+      "images": [
+        "string 1",
+        "sanitize this ."
+      ],
+      "comments": [
+        {
+          "author": "Andre",
+          "content": "I was very pleased!"
+        },
+        {
+          "author": "Tucho",
+          "content": "Hehehehehee"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "name": "My .   Beer",
+      "description": "this is a very long description ....",
+      "type": "ale",
+      "style": "brown",
+      "producer": "diego sanchez",
+      "region": "Azores",
+      "country": "Portugal",
+      "year": 2012,
+      "priceEUR": 3,
+      "alcohol_percentage": 2,
+      "images": [
+        "string 1",
+        "sanitize this ."
+      ],
+      "comments": [
+        {
+          "author": "Andre",
+          "content": "I was very pleased!"
+        },
+        {
+          "author": "Tucho",
+          "content": "Hehehehehee"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "name": "My .   Beer",
+      "description": "this is a very long description ....",
+      "type": "ale",
+      "style": "brown",
+      "producer": "diego sanchez",
+      "region": "Azores",
+      "country": "Portugal",
+      "year": 2012,
+      "priceEUR": 3,
+      "alcohol_percentage": 2,
+      "images": [
+        "string 1",
+        "sanitize this ."
+      ],
+      "comments": [
+        {
+          "author": "Andre",
+          "content": "I was very pleased!"
+        },
+        {
+          "author": "Tucho",
+          "content": "Hehehehehee"
+        }
+      ]
+    }
+  ]
+}
