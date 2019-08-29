@@ -1,6 +1,8 @@
 import * as React from 'react'
 // @ts-ignore
 import { compose, withHandlers } from 'recompose'
+import { connect } from 'react-redux'
+import { selectSearchParameters } from '../../../data/search/selectors'
 import {
   Wrap,
   Text,
@@ -10,19 +12,26 @@ import {
 
 type Props = {
   onChange: any,
-  value: string,
 }
 
-const TextInput = ({ handleInput, value }) => {
+const TextInput = ({ handleInput, searchParameters }) => {
   return (
     <Wrap>
       <Text>Discover</Text>
-      <Input type="text" onChange={handleInput} defaultValue={value} />
+      <Input type="text" onChange={handleInput} value={searchParameters.name || ''} />
     </Wrap>
   )
 }
 
+const mapStateToProps = state => ({
+  searchParameters: selectSearchParameters(state),
+})
+
+const mapDispatchToProps = {
+}
+
 const enhancer: any = compose(
+  connect(mapStateToProps, mapDispatchToProps),
   withHandlers({
     handleInput: (props: Props) => event => {
       const value = event.target.value.replace(/<[^>]*>?/gm, '')
@@ -30,7 +39,7 @@ const enhancer: any = compose(
 
       props.onChange(transformedValue)
     }
-  })
+  }),
 )
 
 

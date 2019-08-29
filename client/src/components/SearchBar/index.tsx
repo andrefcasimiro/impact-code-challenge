@@ -9,13 +9,15 @@ import {
   Wrap,
 } from './styled'
 import TextInput from './TextInput'
+import FilterInput from './FilterInput'
+import Price from './Filters/Price'
 
-const SearchBar = ({ filters, handleSearchByText }) => {
-
+const SearchBar = ({ filters, handleSearchByRange, handleSearchByText }) => {
   return (
     <Content>
       <Wrap>
         <TextInput onChange={handleSearchByText} value={filters.name} />
+        <FilterInput filterKey='Price' component={<Price onChange={handleSearchByRange} />} />
       </Wrap>
     </Content>
   )
@@ -40,8 +42,19 @@ const enhancer: any = compose(
     }
   ),
   withHandlers({
+    handleSearchByRange: (props: any) => (field: string, value: number) => {
+      props.applySearch({
+        name: undefined,
+        region: undefined,
+        country: undefined,
+        producer: undefined,
+        style: undefined,
+        type: undefined,
+        year: undefined,
+        [field]: Number(value),
+      })
+    },
     handleSearchByText: (props: any) => (value: string) => {
-
       props.applySearch({
         name: value,
         region: value,
@@ -50,6 +63,7 @@ const enhancer: any = compose(
         style: value,
         type: value,
         year: value,
+        priceEUR: undefined,
       })
     }
   })

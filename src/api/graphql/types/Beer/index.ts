@@ -32,6 +32,7 @@ export default `
     country: [String]
     producer: [String]
     year: [String]
+    priceEUR: [Int]
   }
 
   input AddBeerInput {
