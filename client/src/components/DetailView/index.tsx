@@ -9,6 +9,7 @@ import { Beer } from '../../data/beer/types'
 import { selectSearchParameters } from '../../data/search/selectors'
 import ExternalLink from '../../assets/svg/ExternalLink'
 import Recommended from './Recommended'
+import Comment from './Comment'
 import {
   Menu,
   Button,
@@ -46,6 +47,14 @@ const DetailView = ({ data, handleProducerClick }) => {
           <Description>{data.description}</Description>
           <Region>brewed in {data.region}, {data.country}</Region>
           <Recommended sourceItem={data} />
+        </Box>
+        <Box width={'100'}>
+          {data.comments.length
+            ? data.comments.map((comment, index) => (
+                <Comment key={index} comment={comment} />
+              ))
+            : <Text>No comments yet.</Text>
+          }
         </Box>
       </DetailsWrap>
     </Content>

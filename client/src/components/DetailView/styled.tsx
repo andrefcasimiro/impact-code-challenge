@@ -65,7 +65,6 @@ export const Img = styled.img`
   max-width: 100%;
   max-height: 30rem;
   margin: 0.5rem 0 1rem 0;
-
 `
 
 export const Price = styled.p`
