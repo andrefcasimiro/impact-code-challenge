@@ -31,7 +31,7 @@ export type Beer = {
   producer: string,
   region: string,
   country: string,
-  year: number,
+  year: string,
   priceEUR: number,
   alcohol_percentage: number,
   images: string[],

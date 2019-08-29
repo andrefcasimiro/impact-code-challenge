@@ -47,6 +47,9 @@ const enhancer: any = compose(
         region: value,
         country: value,
         producer: value,
+        style: value,
+        type: value,
+        year: value,
       })
     }
   })

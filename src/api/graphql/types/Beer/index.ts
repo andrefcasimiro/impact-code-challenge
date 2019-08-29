@@ -1,35 +1,10 @@
 export default `
-  enum BeerType {
-    ale
-    lager
-    malt
-    stout
-  }
-
-  enum BeerStyle {
-    amber
-    blonde
-    brown
-    cream
-    dark
-    pale
-    strong
-    wheat
-    red
-    india_pale_ale
-    lime
-    pilsner
-    golden
-    fruit
-    honey
-  }
-
   type Beer {
     id: Int
     name: String
     description: String
-    type: BeerType
-    style: BeerStyle
+    type: String
+    style: String
     producer: String
     region: String
     country: String
@@ -51,23 +26,23 @@ export default `
 
   input BeersFilter {
     name: [String]
-    type: [BeerType]
-    style: [BeerStyle]
+    type: [String]
+    style: [String]
     region: [String]
     country: [String]
     producer: [String]
-    year: [Int]
+    year: [String]
   }
 
   input AddBeerInput {
     name: String
     description: String
-    type: BeerType
-    style: BeerStyle
+    type: String
+    style: String
     producer: String
     region: String
     country: String
-    year: Int
+    year: String
     priceEUR: Float
     alcohol_percentage: Int
     images: [String]
