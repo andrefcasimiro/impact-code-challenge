@@ -1,7 +1,7 @@
 import * as React from 'react'
 // @ts-ignore
 import { compose, withHandlers, Component, withStateHandlers } from 'recompose'
-import ContextMenu from '../'
+import ContextMenu from '..'
 import { connect } from 'react-redux'
 import { selectSearchParameters } from '../../../../data/search/selectors'
 import {
@@ -15,12 +15,12 @@ type Props = {
   close: Function,
 }
 
-const Price = ({ handleChange, searchParameters, close }) => {
+const Alcohol = ({ handleChange, searchParameters, close }) => {
   return (
     <ContextMenu close={close}>
       <Wrapper>
-        <Value>From {searchParameters.priceEUR || 0} €</Value>
-        <RangeInput type="range" max="20" min="0" onChange={handleChange} defaultValue={searchParameters.priceEUR || 0}/>
+        <Value>Alcohol {searchParameters.alcohol_percentage || 0} %</Value>
+        <RangeInput type="range" max="20" min="0" onChange={handleChange} defaultValue={searchParameters.alcohol_percentage || 0}/>
       </Wrapper>
     </ContextMenu>
   )
@@ -37,10 +37,10 @@ const enhancer: any = compose(
   connect(mapStateToProps, mapDispatchToProps),
   withHandlers({
     handleChange: (props: any) => event => {
-      return props.onChange('priceEUR', event.target.value)
+      return props.onChange('alcohol_percentage', event.target.value)
     }
   }),
 )
 
 
-export default enhancer(Price)
+export default enhancer(Alcohol)

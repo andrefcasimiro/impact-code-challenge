@@ -18,7 +18,8 @@ export const list = async (key: string, filters: any): Promise<any> => {
   table.forEach((entry: any) => {
     Object.keys(filters).forEach((field: any) => {
       if (typeof filters[field][0] === 'number') {
-        result = entry[field] >= filters[field][0]
+        console.log(entry[field], '>= ', filters[field][0])
+        result = entry[field] >= filters[field][0] && !result.includes(entry)
           ? result.concat(entry)
           : result
       }

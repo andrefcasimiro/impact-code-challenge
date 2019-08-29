@@ -33,6 +33,7 @@ export default `
     producer: [String]
     year: [String]
     priceEUR: [Int]
+    alcohol_percentage: [Float]
   }
 
   input AddBeerInput {

@@ -13,7 +13,7 @@ export const searchReducer = (
   action: any,
 ): SearchState => {
   switch (action.type) {
-    case "SEARCH/APPLY":
+    case 'SEARCH/APPLY':
       return {
         ...state,
         parameters: {
@@ -21,6 +21,8 @@ export const searchReducer = (
           ...action.payload,
         },
       }
+    case 'SEARCH/CLEAR':
+      return initialState
     default:
       return state
   }
