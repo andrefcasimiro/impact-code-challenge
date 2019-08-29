@@ -20,7 +20,7 @@ type Added = {
   refetch: Function,
 }
 
-const extractBySelector = (selector: string[]) =>
+export const extractBySelector = (selector: string[]) =>
   path(['data'].concat(selector))
 
 const applyTransform = (
@@ -50,7 +50,7 @@ function withQuery<Outter, Data, Variables>(
       variables: {
         // @ts-ignore
         ...variables(props),
-      }
+      },
     })
   })
 

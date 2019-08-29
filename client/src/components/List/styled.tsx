@@ -3,8 +3,9 @@ import theme from '../../global/theme'
 
 export const Content = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
 `
 

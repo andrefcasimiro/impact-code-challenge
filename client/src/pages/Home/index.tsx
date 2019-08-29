@@ -1,10 +1,10 @@
 import React from 'react'
-import SearchBar from '../../components/SearchBar'
+import UserTools from '../../components/UserTools'
 import List from '../../components/List'
 
 const Home = () => (
   <React.Fragment>
-    <SearchBar />
+    <UserTools />
     <List />
   </React.Fragment>
 )

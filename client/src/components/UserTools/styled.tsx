@@ -5,9 +5,10 @@ import { mq } from '../../common/mediaQuery'
 
 export const Content = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
+  align-items: center;
 `
 
 export const Wrap = styled.div`

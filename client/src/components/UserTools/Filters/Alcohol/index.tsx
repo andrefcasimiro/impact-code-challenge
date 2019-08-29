@@ -1,7 +1,7 @@
 import * as React from 'react'
 // @ts-ignore
 import { compose, withHandlers, Component, withStateHandlers } from 'recompose'
-import ContextMenu from '..'
+import ContextMenu from '../../Filters'
 import { connect } from 'react-redux'
 import { selectSearchParameters } from '../../../../data/search/selectors'
 import {

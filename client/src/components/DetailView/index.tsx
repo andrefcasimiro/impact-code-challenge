@@ -10,6 +10,7 @@ import { selectSearchParameters } from '../../data/search/selectors'
 import ExternalLink from '../../assets/svg/ExternalLink'
 import Recommended from './Recommended'
 import Comment from './Comment'
+import Action from '../Action'
 import {
   Menu,
   Button,
@@ -30,12 +31,12 @@ const DetailView = ({ data, handleProducerClick }) => {
 
   return (
     <Content>
-      <Menu>
-        <Button onClick={() => window.location.assign('/')}>Go back</Button>
-      </Menu>
+      <Action onClick={() => window.location.assign('/')}>Go back</Action>
       <DetailsWrap>
         <Box width={'35'}>
-          <Img src={data.images[0].split('?')[0] + '?auto=compress&w=360'} />
+          {data.images && data.images.length &&
+            <Img src={data.images[0].split('?')[0] + '?auto=compress&w=360'} />
+          }
         </Box>
         <Box width={'65'}>
           <Name>{data.name}</Name>
@@ -49,7 +50,7 @@ const DetailView = ({ data, handleProducerClick }) => {
           <Recommended sourceItem={data} />
         </Box>
         <Box width={'100'}>
-          {data.comments.length
+          {data.comments && data.comments.length
             ? data.comments.map((comment, index) => (
                 <Comment key={index} comment={comment} />
               ))

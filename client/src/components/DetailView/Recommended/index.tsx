@@ -19,7 +19,7 @@ const Recommended = ({ data, sourceItem }) => {
     <React.Fragment>
       <Text>You might also enjoy... </Text>
       <Wrapper>
-        {transformedData.map((beer, index) => 
+        {transformedData.map((beer, index) =>
           <ProductTile beer={beer} key={beer.id + index} onClick={() => window.location.assign(`/beer/${beer.id}`)} />)
         }
       </Wrapper>

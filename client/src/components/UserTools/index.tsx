@@ -1,6 +1,6 @@
 import * as React from 'react'
 // @ts-ignore
-import { compose, withStateHandlers, withHandlers, HOC } from 'recompose'
+import { compose, withStateHandlers, withHandlers } from 'recompose'
 import { connect } from 'react-redux'
 import { applySearch, clear } from '../../data/search/actions'
 import { selectSearchParameters } from '../../data/search/selectors'
@@ -9,14 +9,20 @@ import {
   Wrap,
   Section,
 } from './styled'
+import withOpen from '../../hocs/withOpen'
 import TextInput from './TextInput'
 import FilterInput from './FilterInput'
 import Price from './Filters/Price'
 import Alcohol from './Filters/Alcohol'
+import Action from '../Action'
+import AddProduct from '../../modals/AddProduct'
 
-const SearchBar = ({ filters, handleSearchByRange, handleSearchByText }) => {
+const UserTools = ({ isOpen, toggleOpen, filters, handleSearchByRange, handleSearchByText }) => {
+  console.log('open? ', isOpen)
   return (
     <Content>
+      {isOpen && <AddProduct close={toggleOpen} />}
+      <Action onClick={toggleOpen}>Add product</Action>
       <Wrap>
         <TextInput onChange={handleSearchByText} value={filters.name} />
         <Section>
@@ -38,6 +44,7 @@ const mapDispatchToProps = {
 }
 
 const enhancer: any = compose(
+  withOpen,
   connect(mapStateToProps, mapDispatchToProps),
   withStateHandlers(
     (props: any) => ({
@@ -72,4 +79,4 @@ const enhancer: any = compose(
 )
 
 
-export default enhancer(SearchBar)
+export default enhancer(UserTools)

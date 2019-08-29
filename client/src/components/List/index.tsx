@@ -1,7 +1,6 @@
 import * as React from 'react'
 // @ts-ignore
-import { compose, withHandlers } from 'recompose'
-import { isEmpty } from 'ramda'
+import { compose } from 'recompose'
 import { connect } from 'react-redux'
 import withQuery from '../../hocs/withQuery'
 import { listBeers } from '../../data/beer/queries'

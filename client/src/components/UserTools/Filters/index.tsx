@@ -22,8 +22,8 @@ const enhancer: any = compose(
   ),
   withHandlers({
     handleClickOutside: (props: any) => event => {
-      console.log(props)
       const current = props.contextMenuRef.current
+
       if (current && !current.contains(event.target)) {
         props.close()
       }

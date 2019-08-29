@@ -22,11 +22,13 @@ const ProductTile = ({ beer, onClick }) => {
           by {beer.producer}
         </Producer>
       </Section>
+      {beer.images && beer.images.length &&
+        <Section>
+          <Img src={beer.images[0]} alt='' />
+        </Section>
+      }
       <Section>
-        <Img src={beer.images[0]} alt='' />
-      </Section>
-      <Section>
-        <Price>{beer.priceEUR} €</Price>
+        <Price>{beer.priceEUR} € / {beer.alcohol_percentage} %</Price>
         <Style>{beer.style} {beer.type}</Style>
       </Section>
     </Tile>
