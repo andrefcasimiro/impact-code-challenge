@@ -6,7 +6,6 @@ import { connect } from 'react-redux'
 import withQuery from '../../hocs/withQuery'
 import { listBeers } from '../../data/beer/queries'
 import { Beer } from '../../data/beer/types'
-import { formatStyle, formatType } from '../../data/beer/helpers'
 import { selectSearchParameters } from '../../data/search/selectors'
 import {
   Content,
@@ -27,7 +26,7 @@ const List = ({ data, handleProducerSearch }) => {
     <Content>
       <TilesWrap>
         {data.map((beer: Beer, index: number) =>
-          <Tile key={beer.id + index}>
+          <Tile key={beer.id + index} onClick={() => window.location.assign(`/beer/${beer.id}`)}>
             <Section>
               <Name>{beer.name}</Name>
               <Producer onClick={() => handleProducerSearch(beer.producer)}>
@@ -39,7 +38,7 @@ const List = ({ data, handleProducerSearch }) => {
             </Section>
             <Section>
               <Price>{beer.priceEUR} €</Price>
-              <Style>{formatStyle(beer.style)} {formatType(beer.type)}</Style>
+              <Style>{beer.style} {beer.type}</Style>
             </Section>
           </Tile>
         )}

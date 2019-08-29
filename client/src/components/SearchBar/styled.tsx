@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import theme from '../../global/theme'
-import image from '../../assets/images/header_img_blurred.jpeg'
+import image from '../../assets/images/search_bar_img.jpeg'
 import { mq } from '../../common/mediaQuery'
 
 export const Content = styled.div`

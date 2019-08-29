@@ -4,7 +4,7 @@ import { Query } from '../../hocs/withQuery'
 
 export const getBeer: Query<Beer> = {
   gql: gql`
-    query beer($id: number) {
+    query beer($id: Int) {
       beer(id: $id) {
         name
         description
