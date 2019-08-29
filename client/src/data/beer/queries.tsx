@@ -6,6 +6,7 @@ export const getBeer: Query<Beer> = {
   gql: gql`
     query beer($id: Int) {
       beer(id: $id) {
+        id
         name
         description
         type

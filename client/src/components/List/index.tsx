@@ -7,40 +7,20 @@ import withQuery from '../../hocs/withQuery'
 import { listBeers } from '../../data/beer/queries'
 import { Beer } from '../../data/beer/types'
 import { selectSearchParameters } from '../../data/search/selectors'
+import ProductTile from '../ProductTile'
 import {
   Content,
   TilesWrap,
-  Tile,
-  Section,
-  Name,
-  Producer,
-  Price,
-  Style,
-  Img,
 } from './styled'
 
-const List = ({ data, handleProducerSearch }) => {
+const List = ({ data }) => {
   if (!data) { return null }
 
   return (
     <Content>
       <TilesWrap>
         {data.map((beer: Beer, index: number) =>
-          <Tile key={beer.id + index} onClick={() => window.location.assign(`/beer/${beer.id}`)}>
-            <Section>
-              <Name>{beer.name}</Name>
-              <Producer onClick={() => handleProducerSearch(beer.producer)}>
-                by {beer.producer}
-              </Producer>
-            </Section>
-            <Section>
-              <Img src={beer.images[0]} alt='' />
-            </Section>
-            <Section>
-              <Price>{beer.priceEUR} €</Price>
-              <Style>{beer.style} {beer.type}</Style>
-            </Section>
-          </Tile>
+          <ProductTile beer={beer} key={beer.id + index} onClick={() => window.location.assign(`/beer/${beer.id}`)} />
         )}
       </TilesWrap>
     </Content>
@@ -60,12 +40,6 @@ const enhancer: any = compose(
       return {
         filter: isEmpty ? {} : props.searchParameters,
       }
-    }
-  }),
-  withHandlers({
-    handleProducerSearch: props => value => {
-      const url = value && value.replace(' ', '+')
-      return window.open(`http://www.google.com/search?q=${url}`, '_blank')
     }
   }),
 )
