@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import theme from '../../../global/theme'
+import { mq } from '../../../common/mediaQuery'
 
 export const Wrap = styled.div`
   display: flex;
@@ -7,6 +8,11 @@ export const Wrap = styled.div`
   align-items: center;
   padding: 0.5rem;
   margin-left: 1rem;
+
+  ${mq('max').tabletWide} {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
 `
 
 export const Text = styled.p`

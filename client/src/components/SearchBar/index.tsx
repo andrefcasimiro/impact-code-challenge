@@ -7,6 +7,7 @@ import { selectSearchParameters } from '../../data/search/selectors'
 import {
   Content,
   Wrap,
+  Section,
 } from './styled'
 import TextInput from './TextInput'
 import FilterInput from './FilterInput'
@@ -18,8 +19,10 @@ const SearchBar = ({ filters, handleSearchByRange, handleSearchByText }) => {
     <Content>
       <Wrap>
         <TextInput onChange={handleSearchByText} value={filters.name} />
-        <FilterInput filterKey='Price' component={<Price onChange={handleSearchByRange} />} />
-        <FilterInput filterKey='Alcohol' component={<Alcohol onChange={handleSearchByRange} />} />
+        <Section>
+          <FilterInput filterKey='Price' component={<Price onChange={handleSearchByRange} />} />
+          <FilterInput filterKey='Alcohol' component={<Alcohol onChange={handleSearchByRange} />} />
+        </Section>
       </Wrap>
     </Content>
   )

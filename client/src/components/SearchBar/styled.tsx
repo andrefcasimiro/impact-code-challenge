@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import theme from '../../global/theme'
 import image from '../../assets/images/header_img_blurred.jpeg'
+import { mq } from '../../common/mediaQuery'
 
 export const Content = styled.div`
   display: flex;
@@ -26,4 +27,17 @@ export const Wrap = styled.div`
   margin-top: 2rem;
 
   align-items: center;
+
+  ${mq('max').tabletWide} {
+    flex-direction: column;
+  }
+`
+
+export const Section = styled.div`
+  display: flex;
+  flex-direction: row;
+
+  ${mq('max').tabletWide} {
+    margin-bottom: 2rem;
+  }
 `
