@@ -32,7 +32,7 @@ export default `
     country: [String]
     producer: [String]
     year: [String]
-    priceEUR: [Int]
+    priceEUR: [Float]
     alcohol_percentage: [Float]
   }
 
@@ -46,7 +46,7 @@ export default `
     country: String
     year: String
     priceEUR: Float
-    alcohol_percentage: Int
+    alcohol_percentage: Float
     images: [String]
     comments: [IComment]
   }

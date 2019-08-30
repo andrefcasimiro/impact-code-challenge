@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import theme from '../../../global/theme'
+import { mq } from '../../../common/mediaQuery'
 
 export const Wrap = styled.div`
   display: flex;
@@ -22,4 +23,8 @@ export const Content = styled.div`
   box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+
+  ${mq("max").tablet} {
+    transform: translate(-25%);
+  }
 `

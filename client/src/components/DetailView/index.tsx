@@ -1,19 +1,15 @@
 import * as React from 'react'
 // @ts-ignore
 import { compose, withHandlers } from 'recompose'
-import { isEmpty } from 'ramda'
 import { connect } from 'react-redux'
 import withQuery from '../../hocs/withQuery'
 import { getBeer } from '../../data/beer/queries'
-import { Beer } from '../../data/beer/types'
 import { selectSearchParameters } from '../../data/search/selectors'
 import ExternalLink from '../../assets/svg/ExternalLink'
 import Recommended from './Recommended'
 import Comment from './Comment'
 import Action from '../Action'
 import {
-  Menu,
-  Button,
   Content,
   DetailsWrap,
   Box,

@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import { compose, withStateHandlers, withHandlers, lifecycle } from 'recompose'
 import {
   Wrap,

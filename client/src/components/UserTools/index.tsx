@@ -17,22 +17,19 @@ import Alcohol from './Filters/Alcohol'
 import Action from '../Action'
 import AddProduct from '../../modals/AddProduct'
 
-const UserTools = ({ isOpen, toggleOpen, filters, handleSearchByRange, handleSearchByText }) => {
-  console.log('open? ', isOpen)
-  return (
-    <Content>
-      {isOpen && <AddProduct close={toggleOpen} />}
-      <Action onClick={toggleOpen}>Add product</Action>
-      <Wrap>
-        <TextInput onChange={handleSearchByText} value={filters.name} />
-        <Section>
-          <FilterInput filterKey='Price' component={<Price onChange={handleSearchByRange} />} />
-          <FilterInput filterKey='Alcohol' component={<Alcohol onChange={handleSearchByRange} />} />
-        </Section>
-      </Wrap>
-    </Content>
-  )
-}
+const UserTools = ({ isOpen, toggleOpen, filters, handleSearchByRange, handleSearchByText }) => (
+  <Content>
+    {isOpen && <AddProduct close={toggleOpen} />}
+    <Action onClick={toggleOpen}>Add product</Action>
+    <Wrap>
+      <TextInput onChange={handleSearchByText} value={filters.name} />
+      <Section>
+        <FilterInput filterKey='Price' component={<Price onChange={handleSearchByRange} />} />
+        <FilterInput filterKey='Alcohol' component={<Alcohol onChange={handleSearchByRange} />} />
+      </Section>
+    </Wrap>
+  </Content>
+)
 
 const mapStateToProps = state => ({
   searchParameters: selectSearchParameters(state),

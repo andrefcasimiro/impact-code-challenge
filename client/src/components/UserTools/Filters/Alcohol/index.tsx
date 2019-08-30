@@ -1,6 +1,6 @@
 import * as React from 'react'
 // @ts-ignore
-import { compose, withHandlers, Component, withStateHandlers } from 'recompose'
+import { compose, withHandlers } from 'recompose'
 import ContextMenu from '../../Filters'
 import { connect } from 'react-redux'
 import { selectSearchParameters } from '../../../../data/search/selectors'
@@ -9,11 +9,6 @@ import {
   Value,
   RangeInput,
 } from './styled'
-
-type Props = {
-  onChange: Function,
-  close: Function,
-}
 
 const Alcohol = ({ handleChange, searchParameters, close }) => {
   return (
@@ -30,8 +25,7 @@ const mapStateToProps = state => ({
   searchParameters: selectSearchParameters(state),
 })
 
-const mapDispatchToProps = {
-}
+const mapDispatchToProps = {}
 
 const enhancer: any = compose(
   connect(mapStateToProps, mapDispatchToProps),
@@ -41,6 +35,5 @@ const enhancer: any = compose(
     }
   }),
 )
-
 
 export default enhancer(Alcohol)

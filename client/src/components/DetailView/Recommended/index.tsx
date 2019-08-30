@@ -1,6 +1,6 @@
 import * as React from 'react'
 // @ts-ignore
-import { compose, withHandlers } from 'recompose'
+import { compose } from 'recompose'
 import withQuery from '../../../hocs/withQuery'
 import { listBeers } from '../../../data/beer/queries'
 import ProductTile from '../../ProductTile'

@@ -14,8 +14,8 @@ const Select = ({ name, options, label, value, onChange, error }) => {
       <Label>{label}</Label>
       <StyledSelect onChange={onChange} value={value} name={name}>
         {options.map((option, index) =>
-          <React.Fragment>
-            {index === 0 && <option value="" selected disabled hidden>Choose one...</option>}
+          <React.Fragment key={index}>
+            {index === 0 && <option key={index + ' initial'} value="" selected disabled hidden>Choose one...</option>}
             <option key={index} value={option}>{option}</option>
           </React.Fragment>
         )}

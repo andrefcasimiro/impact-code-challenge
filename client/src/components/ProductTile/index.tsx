@@ -1,6 +1,4 @@
 import * as React from 'react'
-// @ts-ignore
-import { compose, withHandlers } from 'recompose'
 import {
   Tile,
   Section,
