@@ -2,7 +2,7 @@
 A Wine / Beer cellar web app built in React JS as a code challenge for Impact. Includes a full NodeJS / GraphQL / Typescript companion api.
 
 # demo
-(app not live yet, here's a vimeo link for now)
+(app not live yet, here's a vimeo link for now):
 https://vimeo.com/358508529
 
 # instructions
